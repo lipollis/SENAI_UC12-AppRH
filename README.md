@@ -40,7 +40,7 @@
 <h2><strong> :white_medium_square: Instalação  :white_medium_square: Install</strong></h2>
 
 <p align="justify">:pencil: </p><br>
-<<<<<<< HEAD
+
 
 - Criação projeto
 ```
@@ -81,46 +81,3 @@ ng generate service nome-servico
 ng generate module app-routing
 ```
 <br>
-=======
-
-- Criação projeto
-```
-  ng new AppRH
-```
-
-- Instalação Bootstrap
-```
-npm install bootstrap
-```
-
-- Servidor JSON
-```
-json-server --watch vagas-db.json
-```
-- Build do projeto
-```
-ng build
-```
-- Iniciar servidor
-```
-ng serve
-```
-- Acessar servidor JSON
-```
-json-server --watch vagas-db.json
-```
-- Criar componentes
-```
-ng generate component nome-componente
-```
-- Criar Service (busca os dados da API)
-```
-ng generate service nome-servico
-```
-- Criar rotas de navegação (caso não selecionado na criação do projeto)
-```
-ng generate module app-routing
-```
-
-<br>
-
