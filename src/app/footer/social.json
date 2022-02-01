@@ -1,0 +1,44 @@
+{
+    "social": [
+        {
+            "nome": "Instagram",
+            "img": "socialInstagram.svg",
+            "url": "https://www.instagram.com/alinepollis/"
+        },
+        {
+            "nome": "Github",
+            "img": "socialGithub.svg",
+            "url": "https://github.com/lipollis"
+        },
+        {
+            "nome": "Facebook",
+            "img": "socialFacebook.svg",
+            "url": "https://www.facebook.com/aline.pollis/"
+        },
+        {
+            "nome": "LinkedIn",
+            "img": "socialLinkedin.svg",
+            "url": "https://www.linkedin.com/in/alinepollisbeck/"
+        },
+        {
+            "nome": "Whatsapp",
+            "img": "socialWhatsapp.svg",
+            "url": ""
+        },
+        {
+            "nome": "Telegram",
+            "img": "socialTelegram.svg",
+            "url": "https://t.me/AlinePollis"
+        },
+        {
+            "nome": "Discord",
+            "img": "socialDiscord.svg",
+            "url": ""
+        },
+        {
+            "nome": "E-mail",
+            "img": "socialMail.svg",
+            "url": "mailto:aline.pollis@hotmail.com"
+        }
+    ]
+}
