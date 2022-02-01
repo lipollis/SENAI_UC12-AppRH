@@ -8,7 +8,7 @@ import { VagasModel } from './models/Vagas.model';
 })
 export class SearchVagasAPIService {
 
-  private url = "";
+  private url = "http://localhost:3000/vagas";
 
   constructor(private _httpClient: HttpClient) { }
 
