@@ -1,1 +1,59 @@
 <p>cadastrar-vagas works!</p>
+
+<form class="row g-3 needs-validation" novalidate>
+
+    <form class="form-floating">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="ID Vaga" value="" [(ngModel)]="vaga.id">
+        <label for="floatingInputValue">ID Vaga</label>
+      </form>
+
+      <form class="form-floating">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="Descrição" value="" [(ngModel)]="vaga.descricao">
+        <label for="floatingInputValue">Descrição</label>
+      </form>
+
+      <form class="form-floating">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="Requisitos obrigatórios" value="" [(ngModel)]="vaga.req_obrigatorios">
+        <label for="floatingInputValue">Requisitos obrigatórios</label>
+      </form>
+
+      <form class="form-floating">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="Requisitos desejáveis" value=""[(ngModel)]="vaga.req_desejaveis">
+        <label for="floatingInputValue">Requisitos desejáveis</label>
+      </form>
+
+      <form class="form-floating">
+        <input type="number" class="form-control" id="floatingInputValue" placeholder="Remuneração" value="" [(ngModel)]="vaga.remuneracao">
+        <label for="floatingInputValue">Remuneração</label>
+      </form>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1" [(ngModel)]="vaga.aberta">
+        <label class="form-check-label" for="inlineRadio1">Vaga aberta</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2" [(ngModel)]="vaga.aberta">
+        <label class="form-check-label" for="inlineRadio2">Vaga encerrada</label>
+      </div>
+
+      <form class="form-floating">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="Benefícios" value="" [(ngModel)]="vaga.beneficios">
+        <label for="floatingInputValue">Benefícios</label>
+      </form>
+
+      <form class="form-floating">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="Local de trabalho" value="" [(ngModel)]="vaga.local_trabalho">
+        <label for="floatingInputValue">Local de trabalho</label>
+      </form>
+
+      <form class="form-floating">
+        <input type="text" class="form-control" id="floatingInputValue" placeholder="Imagem" value="" [(ngModel)]="vaga.foto">
+        <label for="floatingInputValue">Imagem</label>
+      </form>
+
+
+    <div class="col-12">
+      <button type="button" class="btn btn-success"  (click)="cadastrar()">Cadastrar</button>
+
+    </div>
+  </form>

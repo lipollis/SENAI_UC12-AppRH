@@ -1,9 +1,8 @@
 
-
 <section>
 
 
-    <div *ngFor="let vaga of vagas">
+    <div *ngFor="let vaga of vagasPainel">
         <div class="card mb-3 text-white bg-secondary " style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
@@ -11,7 +10,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <div class="card-header">{{vaga.descricao}}</div>
+                        <div class="card-header">ID: {{vaga.id}} - {{vaga.descricao}}</div>
                         
                         <div class="card-body">
                             <h5 class="card-title">Remuneração: {{vaga.remuneracao}}</h5>

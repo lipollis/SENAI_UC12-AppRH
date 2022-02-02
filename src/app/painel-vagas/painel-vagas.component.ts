@@ -10,7 +10,7 @@ import { SearchVagasAPIService } from '../search-vagas-api.service';
 export class PainelVagasComponent implements OnInit {
 
   // ATRIBUTO PARA O ARRAY - INICIA VAZIO
-  public vagas: VagasModel[] = [];
+  public vagasPainel: VagasModel[] = [];
 
   constructor(private _searchVagasAPIService: SearchVagasAPIService) { }
 
@@ -26,9 +26,9 @@ export class PainelVagasComponent implements OnInit {
     this._searchVagasAPIService.getVagas()
       .subscribe(
         retornaVaga => {
-          this.vagas = retornaVaga.map(item => {
+          this.vagasPainel = retornaVaga.map(item => {
             return new VagasModel(
-              item.idvaga,
+              item.id,
               item.descricao,
               item.req_obrigatorios,
               item.req_desejaveis,

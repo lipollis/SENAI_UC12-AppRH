@@ -1,37 +1,48 @@
 {
-    "vagas": [
-        {
-            "idvaga": 1000,
-            "descricao": "Supervisor de Sistemas",
-            "req_obrigatorios": "5 anos de experiência e graduação na área",
-            "req_desejaveis": "Especialização",
-            "remuneracao": "5.123,45",
-            "aberta": 1,
-            "beneficios": "VT + VR",
-            "local_trabalho": "Jundiaí/SP",
-            "foto": "vaga-emprego-1.jpg"
-        },
-        {
-            "idvaga": 1001,
-            "descricao": "Gerente de Sistemas",
-            "req_obrigatorios": "15 anos de experiência e especialização",
-            "req_desejaveis": "Mestrado",
-            "remuneracao": "14.123,00",
-            "aberta": 1,
-            "beneficios": "Ajuda de custo e abono salarial",
-            "local_trabalho": "Barueri/SP",
-            "foto": "vaga-emprego-2.jpg"
-        },
-        {
-            "idvaga": 1002,
-            "descricao": "Web Designer",
-            "req_obrigatorios": "HTML e CSS",
-            "req_desejaveis": "Frameworks CSS",
-            "remuneracao": "3.456,78",
-            "aberta": 1,
-            "beneficios": "VT",
-            "local_trabalho": "Osasco/SP",
-            "foto": "vaga-emprego-3.jpg"
-        }
-    ]
+  "vagas": [
+    {
+      "id": 1,
+      "descricao": "Supervisor de Sistemas",
+      "req_obrigatorios": "5 anos de experiência e graduação na área",
+      "req_desejaveis": "Especialização",
+      "remuneracao": "5.123,45",
+      "aberta": 1,
+      "beneficios": "VT + VR",
+      "local_trabalho": "Jundiaí/SP",
+      "foto": "vaga-emprego-1.jpg"
+    },
+    {
+      "id": 2,
+      "descricao": "Gerente de Sistemas",
+      "req_obrigatorios": "15 anos de experiência e especialização",
+      "req_desejaveis": "Mestrado",
+      "remuneracao": "14.123,00",
+      "aberta": 1,
+      "beneficios": "Ajuda de custo e abono salarial",
+      "local_trabalho": "Barueri/SP",
+      "foto": "vaga-emprego-2.jpg"
+    },
+    {
+      "id": 3,
+      "descricao": "Web Designer",
+      "req_obrigatorios": "HTML e CSS",
+      "req_desejaveis": "Frameworks CSS",
+      "remuneracao": "3.456,78",
+      "aberta": 1,
+      "beneficios": "VT",
+      "local_trabalho": "Osasco/SP",
+      "foto": "vaga-emprego-3.jpg"
+    },
+    {
+      "id": 4,
+      "descricao": "",
+      "req_obrigatorios": "",
+      "req_desejaveis": "",
+      "remuneracao": 0,
+      "aberta": "1",
+      "beneficios": "",
+      "local_trabalho": "",
+      "foto": ""
+    }
+  ]
 }
