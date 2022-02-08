@@ -34,12 +34,23 @@
       "foto": "vaga-emprego-3.jpg"
     },
     {
-      "id": 4,
+      "id": 5,
       "descricao": "",
       "req_obrigatorios": "",
       "req_desejaveis": "",
       "remuneracao": 0,
-      "aberta": "1",
+      "aberta": 0,
+      "beneficios": "",
+      "local_trabalho": "",
+      "foto": ""
+    },
+    {
+      "id": 6,
+      "descricao": "",
+      "req_obrigatorios": "",
+      "req_desejaveis": "",
+      "remuneracao": 0,
+      "aberta": 0,
       "beneficios": "",
       "local_trabalho": "",
       "foto": ""

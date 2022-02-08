@@ -9,16 +9,16 @@ import { SearchVagasAPIService } from '../search-vagas-api.service';
 })
 export class PainelVagasComponent implements OnInit {
 
-  // ATRIBUTO PARA O ARRAY - INICIA VAZIO
-  public vagasPainel: VagasModel[] = [];
-
+    // ATRIBUTO PARA O ARRAY - INICIA VAZIO
+    public vagas: VagasModel[] = [];
+    
   constructor(private _searchVagasAPIService: SearchVagasAPIService) { }
 
   ngOnInit(): void {
     this.listarVagas();
   }
 
-  // MÉTODO QUE SERÁ INICIALIZADO QUANDO SOLICITADO O PAINEL
+    // MÉTODO QUE SERÁ INICIALIZADO QUANDO SOLICITADO O PAINEL
   // NECESSÁRIO USAR TODOS OS ITENS DO CONTRUTOR DO MODELS
   // PQ SERÃO AS INFORMAÇÕES GUARDADAS NO VETOR MAP E 
   // ESTÃO ARMAZENADAS NO JSON
@@ -26,7 +26,7 @@ export class PainelVagasComponent implements OnInit {
     this._searchVagasAPIService.getVagas()
       .subscribe(
         retornaVaga => {
-          this.vagasPainel = retornaVaga.map(item => {
+          this.vagas = retornaVaga.map(item => {
             return new VagasModel(
               item.id,
               item.descricao,
@@ -48,5 +48,4 @@ CONFORME A QTDE DE VAGAS ARMAZENADAS NO JSON
 
 PARA ISSO, TAMBÉM FOI USADO UMA NOTAÇÃO ENTRE {{}} PARA 
 BUSCAR AS INFORMAÇÕES DO JSON NO SRC*/
-
 }

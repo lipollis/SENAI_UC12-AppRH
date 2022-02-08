@@ -18,19 +18,20 @@ export class SearchVagasAPIService {
   }
 
   // MÉTODO PARA CADASTRAR VAGA
-  cadastrarVaga(vaga: VagasModel): Observable<VagasModel[]>{
+  cadastrarVaga(vaga: VagasModel):Observable<VagasModel[]>{
     return this._httpClient.post<VagasModel[]>(this.url,vaga);
   }
 
   // MÉTODO PARA ATUALIZAR VAGA
-  atualizarVagas(id: any, vaga:VagasModel): Observable<VagasModel[]>{
+  atualizarVaga(id:any, vaga:VagasModel):Observable<VagasModel[]>{
     const urlAtualizar = `${this.url}/${id}`;
     return this._httpClient.put<VagasModel[]>(urlAtualizar,vaga)
   }
 
   // MÉTODO PARA DELETAR VAGA
-  removerVagas(id:any):Observable<VagasModel[]>{
+  removerVaga(id:any):Observable<VagasModel[]>{
     const urlDeletar = `${this.url}/${id}`;
     return this._httpClient.delete<VagasModel[]>(urlDeletar);
   }
+
 }

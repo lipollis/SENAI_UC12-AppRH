@@ -2,7 +2,7 @@
 <section>
 
 
-    <div *ngFor="let vaga of vagasPainel">
+    <div  *ngFor="let vaga of vagas">
         <div class="card mb-3 text-white bg-secondary " style="max-width: 540px;">
             <div class="row g-0">
                 <div class="col-md-4">
@@ -10,11 +10,11 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <div class="card-header">ID: {{vaga.id}} - {{vaga.descricao}}</div>
+                        <div class="card-header">ID: {{vaga.id}}  - {{vaga.descricao}} </div>
                         
                         <div class="card-body">
-                            <h5 class="card-title">Remuneração: {{vaga.remuneracao}}</h5>
-                            <p class="card-text">Local de Trabalho: {{vaga.local_trabalho}}</p>
+                            <h5 class="card-title">Remuneração: {{vaga.remuneracao}} </h5>
+                            <p class="card-text">Local de Trabalho: {{vaga.local_trabalho}} </p>
                             <button type="button" class="btn btn-warning">+ Info</button>
                           </div>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
@@ -24,5 +24,5 @@
         </div>
     </div>
     
-
-</section>
+  
+  </section>
