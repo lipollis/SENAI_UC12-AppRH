@@ -18,7 +18,7 @@ export class EditarVagasComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  atualizar(id: number, vaga:VagasModel){
+  atualizar(id: number){
     this._searchVagasAPI.atualizarVaga(id,this.vaga).subscribe(
       vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
       err => {console.log("erro ao atualizar")}
