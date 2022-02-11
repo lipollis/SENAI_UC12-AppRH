@@ -1,57 +1,54 @@
+
 <section>
+  <div *ngFor="let vaga of vagas">
 
+    <div class="card mb-3 text-white bg-secondary " style="max-width: 540px;">
+      <div class="row g-0">
+          <div class="col-md-4">
+              <img src="../../assets/img/Vagas/{{vaga.foto}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+              <div class="card-body">
+                  <div class="card-header">ID: {{vaga.id}}  - {{vaga.descricao}} </div>
+                  
+                  <div class="card-body">
+                      <h5 class="card-title">Remuneração: {{vaga.remuneracao}} </h5>
+                      <p class="card-text">Local de Trabalho: {{vaga.local_trabalho}} </p>
 
-    <div  *ngFor="let vaga of vagas">
-        <div class="card mb-3 text-white bg-secondary " style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="../../assets/img/Vagas/{{vaga.foto}}" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <div class="card-header">ID: {{vaga.id}}  - {{vaga.descricao}} </div>
-                        
-                        <div class="card-body">
-                            <h5 class="card-title">Remuneração: {{vaga.remuneracao}} </h5>
-                            <p class="card-text">Local de Trabalho: {{vaga.local_trabalho}} </p>
+                        <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                          + Info!
+                      </button>
 
-                              <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" >
-                                + Info!
-                            </button>
-
-                            
-                          </div>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-  
-  </section>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </div>
+</section>
 
 
-
-  
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" name="modal">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">ID: {{vaga.id}} </h5>
-            <ul ="let vaga of vagas">
-                <li>Descrição: {{vaga.descricao}}</li>
-                <li>Requisitos obrigatórios: {{vaga.req_obrigatorios}}</li>
-                <li>Requisitos desejáveis: {{vaga.req_desejaveis}}</li>
-                <li>Remuneração: {{vaga.remuneracao}}</li>
-                <li>Vaga está aberta? 1-Sim 0-Não: {{vaga.aberta}}</li>
-                <li>Benefícios: {{vaga.beneficios}}</li>
-                <li>Local de trabalho: {{vaga.local_trabalho}}</li>
-            </ul>
+          <h5 class="modal-title" id="exampleModalLabel"></h5>
 
-            
+          <ul >
+            <li>Descrição: </li>
+            <li>Requisitos obrigatórios: </li>
+            <li>Requisitos desejáveis: </li>
+            <li>Remuneração: </li>
+            <li>Vaga está aberta? 1-Sim 0-Não:</li>
+            <li>Benefícios: </li>
+            <li>Local de trabalho: </li>
+        </ul>
+                      
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
