@@ -1,4 +1,3 @@
-
 <section>
 
 
@@ -15,7 +14,13 @@
                         <div class="card-body">
                             <h5 class="card-title">Remuneração: {{vaga.remuneracao}} </h5>
                             <p class="card-text">Local de Trabalho: {{vaga.local_trabalho}} </p>
-                            <button type="button" class="btn btn-warning">+ Info</button>
+
+                              <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                                + Info!
+                            </button>
+
+                            
                           </div>
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
@@ -26,3 +31,38 @@
     
   
   </section>
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" name="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ID: {{vaga.id}} </h5>
+            <ul ="let vaga of vagas">
+                <li>Descrição: {{vaga.descricao}}</li>
+                <li>Requisitos obrigatórios: {{vaga.req_obrigatorios}}</li>
+                <li>Requisitos desejáveis: {{vaga.req_desejaveis}}</li>
+                <li>Remuneração: {{vaga.remuneracao}}</li>
+                <li>Vaga está aberta? 1-Sim 0-Não: {{vaga.aberta}}</li>
+                <li>Benefícios: {{vaga.beneficios}}</li>
+                <li>Local de trabalho: {{vaga.local_trabalho}}</li>
+            </ul>
+
+            
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
