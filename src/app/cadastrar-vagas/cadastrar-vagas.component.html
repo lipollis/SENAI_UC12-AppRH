@@ -1,28 +1,30 @@
-<div>
+<div class="form-container">
+
+    <h2>Registro de vaga</h2>
     <form class="row g-3 needs-validation" novalidate>
 
         <div class="form-floating">
-            <input type="text" class="form-control" id="id" placeholder="ID Vaga" value="id" name="id" [(ngModel)] = "vaga.id">
+            <input type="text" class="form-control text-input" id="id" placeholder="ID Vaga" value="id" name="id" [(ngModel)] = "vaga.id">
             <label for="id">ID Vaga</label>
         </div>
     
         <div class="form-floating">
-            <input type="text" class="form-control" id="descricao" placeholder="Descrição" value="descricao" name="descricao" [(ngModel)] = "vaga.descricao">
+            <input type="text" class="form-control text-input" id="descricao" placeholder="Descrição" value="descricao" name="descricao" [(ngModel)] = "vaga.descricao">
             <label for="descricao">Descrição</label>
         </div>
     
         <div class="form-floating">
-            <input type="text" class="form-control" id="req_obrigatorios" placeholder="Requisitos obrigatórios" name="req_obrigatorios" [(ngModel)] = "vaga.req_obrigatorios">
+            <input type="text" class="form-control text-input" id="req_obrigatorios" placeholder="Requisitos obrigatórios" name="req_obrigatorios" [(ngModel)] = "vaga.req_obrigatorios">
             <label for="req_obrigatorios">Requisitos obrigatórios</label>
         </div>
     
         <div class="form-floating">
-            <input type="text" class="form-control" id="req_desejaveis" placeholder="Requisitos desejáveis" name="req_desejaveis" value="req_desejaveis" [(ngModel)] = "vaga.req_desejaveis">
+            <input type="text" class="form-control text-input" id="req_desejaveis" placeholder="Requisitos desejáveis" name="req_desejaveis" value="req_desejaveis" [(ngModel)] = "vaga.req_desejaveis">
             <label for="req_desejaveis">Requisitos desejáveis</label>
         </div>
     
         <div class="form-floating">
-            <input type="number" class="form-control" id="remuneracao" placeholder="Remuneração" value="remuneracao" name="remuneracao" [(ngModel)] = "vaga.remuneracao">
+            <input type="number" class="form-control text-input" id="remuneracao" placeholder="Remuneração" value="remuneracao" name="remuneracao" [(ngModel)] = "vaga.remuneracao">
             <label for="remuneracao">Remuneração</label>
         </div>
     
@@ -37,17 +39,17 @@
         </div>
     
         <div class="form-floating">
-            <input type="text" class="form-control" id="beneficios" placeholder="Benefícios" value="beneficios" name="beneficios" [(ngModel)] = "vaga.beneficios">
+            <input type="text" class="form-control text-input" id="beneficios" placeholder="Benefícios" value="beneficios" name="beneficios" [(ngModel)] = "vaga.beneficios">
             <label for="beneficios">Benefícios</label>
         </div>
     
         <div class="form-floating">
-            <input type="text" class="form-control" id="local_trabalho" placeholder="Local de trabalho"  value="local_trabalho" name="local_trabalho" [(ngModel)] = "vaga.local_trabalho">
+            <input type="text" class="form-control text-input" id="local_trabalho" placeholder="Local de trabalho"  value="local_trabalho" name="local_trabalho" [(ngModel)] = "vaga.local_trabalho">
             <label for="local_trabalho">Local de trabalho</label>
         </div>
     
         <div class="form-floating">
-            <input type="text" class="form-control" id="foto" placeholder="Imagem" value="foto" name="foto" [(ngModel)] = "vaga.foto">
+            <input type="text" class="form-control text-input" id="foto" placeholder="Imagem" value="foto" name="foto" [(ngModel)] = "vaga.foto">
             <label for="foto">Imagem</label>
         </div>
     

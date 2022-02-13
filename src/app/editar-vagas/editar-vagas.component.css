@@ -1,0 +1,24 @@
+*{
+    font-size:10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding:0.5rem;
+}
+
+.form-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5rem;
+    flex-direction: column;
+}
+
+.row.grow{
+    flex-grow:1;
+}
+
+h2{
+    text-align: center;
+    padding: 2rem;
+}
+
+

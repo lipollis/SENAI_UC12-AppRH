@@ -1,23 +1,31 @@
+*{
+    font-size:10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding:0.5rem;
+}
 
 .container-fluid{
     background-color: black;
     margin: 0 auto;
+    margin-top:auto;
     font-size:10px;
-    padding: 7rem;;
-    
+    padding: 3rem;;
+    bottom: 0rem;
+    position: sticky;
+    width: 100%;    
 }
 
 .assinatura{
-    width:7rem;
+    width:6rem;
 }
 
 .recruitment{
-    width: 7rem;
+    width: 5rem;
 }
 
 .icon-social{
-    width: 3rem;
-    margin: 0.3rem;
+    width: 4rem;
 
 }
 
@@ -26,9 +34,25 @@
     opacity: 1;
 }
 
+.container-social{
+    display: inline;
+    grid-gap: 0.2rem;
+    
+}
 .grid-icon-social{
-    width:30%;
     float:rigth;
     display: grid; 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 0.2rem;
+    width: 33vw;
+
+}
+
+.grid-icon-social > div{
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+}
+span{
+    font-size: 1.5rem;
 }

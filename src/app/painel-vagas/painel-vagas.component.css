@@ -1,15 +1,82 @@
 *{
     font-size:10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding:0.5rem;
 }
 
+/*
 .painel-card{
     display: grid; 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto;
 }
 
+div.row.g-0{
+    margin:0.8rem;
+    padding: 0.3rem;
+}
 .card{
-    width: 60rem;
+    width: 40rem;
+    height: 18rem;
 }
 .card-body{
+    width: 20rem;
+}
+
+.card-header{
+    font-size: 1.5rem;
+}
+
+.card-inside{
+    height: 9rem;
+    padding-top: 1rem;
+}
+
+.card-inside > p{
+    font-size: 1rem;
+}*/
+
+button{
+    height: 2.5rem;
+    float: right;
+    font-size: 1rem;
+}
+
+.div-img{
+    text-align: center;
+    align-items: center;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+img{
+    width: 10rem;
+}
+
+div.modal-content{
+    width: 40rem;
+}
+
+div.modal-header{
+    height: 5rem;
+}
+.modal-title{
+    font-size: 2rem;
+}
+button.btn-close{
+    right:0rem;
+    margin-inline-end: 0.2rem;
+    flex-direction: row-reverse;
+
+}
+
+.list-descricao{
     width: 30rem;
 }
+
+.list-descricao > ul > li{
+    font-size: 1.5rem;
+    list-style-type: none;
+}
+
