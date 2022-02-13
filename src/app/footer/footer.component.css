@@ -1,58 +1,116 @@
-*{
-    font-size:10px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding:0.5rem;
+/* #######   CONFIGURAÇÃO DO COMPONENTE   #######*/
+:root{
+  --cor-destaque: #FFFF;
+  --cor-vermelha: #FF4A3B;
+  --cor-amarela: #DABA36;
+  --fundo-escuro:#19395B;
+  --cor-laranja: #E48877;
+  --cor-preta:rgb(255,255,255,0);
+  --cor-cinza:#9B94B5;
 }
 
-.container-fluid{
-    background-color: black;
-    margin: 0 auto;
-    margin-top:auto;
-    font-size:10px;
-    padding: 3rem;;
-    bottom: 0rem;
+body{
+  font-size: 20px;
+  font-family:'Roboto', sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+footer{
+    z-index: 4;
     position: sticky;
-    width: 100%;    
-}
-
-.assinatura{
-    width:6rem;
-}
-
-.recruitment{
-    width: 5rem;
-}
-
-.icon-social{
-    width: 4rem;
-
-}
-
-.icon-social:hover{
-    transform: scale(1.2);
-    opacity: 1;
-}
-
-.container-social{
-    display: inline;
-    grid-gap: 0.2rem;
+  }
+  
+  #footer >h3 {
+      font-size: 1.5rem;
+      text-align: center;
+      align-items: center;
+      margin: 2rem;
+  }
+    #footer >h3::first-letter {
+        color: var(--cor-vermelha);
+      }
     
-}
-.grid-icon-social{
-    float:rigth;
-    display: grid; 
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 0.2rem;
-    width: 33vw;
-
-}
-
-.grid-icon-social > div{
+      .col-nav-footer{
+        margin: 3rem;
+        text-align: center;
+        align-items: center;
+      }
+  
+  p{
+    padding: 0.25rem;
     text-align: center;
-    padding: 0.5rem 0;
+    align-items: center;
     font-size: 1rem;
+  }
+  
+  .d-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .assinatura,
+  .recruitment{
+    width: 70px;
+    text-align: center;
+  }
+  
+  .footer {
+    background: black;
+    color: darkgray;
+    padding: 3rem;
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: darkgrey;
+  }
+  
+  .footer a:hover {
+    text-decoration: none;
+    color: var(--cor-laranja);
+    cursor: pointer;
+  }
+  
+  h5{
+      text-align: center;
+  }
+  .footer p {
+    margin-bottom: 0;
+  }
+  
+  
+  .redeSocial{
+    width: 40px;
+    margin: 0.5rem;
+  }
+  .redeSocial:hover{
+      transform: scale(1.2);
+    }
+  
+  
+/* =======================================================
+            #######   RESPONSIVIDADE   #######
+======================================================= */
+
+@media (max-width: 600px) {
+  .recruitment{
+    width: 40px;
+  }
+
 }
-span{
-    font-size: 1.5rem;
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .recruitment{
+    width: 40px;
+  }
+
+  
+}
+
+@media (min-aspect-ratio: 1025px) {
+
+
 }

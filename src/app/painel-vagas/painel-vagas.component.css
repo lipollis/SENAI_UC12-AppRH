@@ -1,40 +1,31 @@
 *{
+    max-width: 1200px;
     font-size:10px;
     box-sizing: border-box;
     margin: 0 auto;
     padding:0.5rem;
 }
 
-/*
-.painel-card{
-    display: grid; 
-    grid-template-columns: auto auto;
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 2rem;
 }
 
-div.row.g-0{
-    margin:0.8rem;
-    padding: 0.3rem;
-}
-.card{
-    width: 40rem;
-    height: 18rem;
-}
 .card-body{
     width: 20rem;
 }
 
-.card-header{
+.card-title{
     font-size: 1.5rem;
 }
 
-.card-inside{
-    height: 9rem;
-    padding-top: 1rem;
+.card-text{
+    font-size: 1rem;
 }
 
-.card-inside > p{
-    font-size: 1rem;
-}*/
 
 button{
     height: 2.5rem;
@@ -51,18 +42,20 @@ button{
 }
 
 img{
-    width: 10rem;
+    height: auto;
+    width: 20rem;
+    vertical-align: middle;
 }
 
 div.modal-content{
-    width: 40rem;
+    width: 25rem;
 }
 
 div.modal-header{
     height: 5rem;
 }
 .modal-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 button.btn-close{
     right:0rem;
@@ -76,7 +69,36 @@ button.btn-close{
 }
 
 .list-descricao > ul > li{
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     list-style-type: none;
 }
 
+/*======================================
+RESPONSIVIDADE
+======================================*/
+@media (max-width: 600px) {
+    .cards {
+      max-width: 560px;
+      margin: 0 auto 3rem;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .cards {
+      grid-gap: 3rem;
+      margin: 0 auto 3rem;
+    }
+  
+    
+  }
+  
+  @media (min-aspect-ratio: 1025px) {
+    .cards {
+      min-width: 1500px;
+      grid-gap: 5rem;
+      margin: 0 auto 5rem;
+    }
+  
+  }
+  

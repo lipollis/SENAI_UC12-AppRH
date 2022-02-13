@@ -1,41 +1,29 @@
-<section>
-  <div class="container">
-    <div class="painel-card ">
-      <div *ngFor="let vaga of vagas" class="row">
+<section class="cards">
 
-        <div class="col-sm-6">
+  <div *ngFor="let vaga of vagas" class="">
 
-          <div class="text-white bg-secondary card border-warning">
-            <div class="row g-0">
-              <div class="col-md-4 div-img">
-                <img src="../../assets/img/Vagas/{{vaga.foto}}" class="img-fluid rounded-start"
-                  alt="Imagem referente a vaga">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <div class="card-header">ID: {{vaga.id}} - {{vaga.descricao}} </div>
+  <div class="">
 
-                  <div class="card-inside">
-                    <p class="card-text">Remuneração: {{vaga.remuneracao}} </p>
-                    <p class="card-text">Local de Trabalho: {{vaga.local_trabalho}} </p>
-
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      + Info!
-                    </button>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-
+    <div class="card border-warning mb-3" >
+      <img class="card-img-top" src="../../assets/img/Vagas/{{vaga.foto}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">ID: {{vaga.id}} - {{vaga.descricao}}</h5>
+        <p class="card-text">Remuneração: {{vaga.remuneracao}}</p>
+        <p class="card-text">Local de Trabalho: {{vaga.local_trabalho}}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"></small>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          + Info!
+        </button>
       </div>
     </div>
   </div>
+
+</div>
+
+
 </section>
 
 
