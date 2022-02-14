@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { VagasModel } from '../models/Vagas.model';
 import { SearchVagasAPIService } from '../search-vagas-api.service';
@@ -57,17 +56,14 @@ BUSCAR AS INFORMAÇÕES DO JSON NO SRC*/
 
 updateVaga(id: number){
   this._searchVagasAPIService.atualizarVaga(id,this.vaga).subscribe(
-    vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
-    err => {console.log("erro ao atualizar")}
+    vagaMsg => {this.vaga = new VagasModel(0,"","","",0,0,"","","")}
   );
-  window.location.href = "/painel";
-
+  window.location.href = "['/update', vaga.id]";
 }
 
 deleteVaga(id: number){
   this._searchVagasAPIService.removerVaga(id).subscribe(
-    vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
-    err => {console.log("erro ao Excluir")}
+    vagaMsg => {this.vaga = new VagasModel(0,"","","",0,0,"","","")}
   );
   window.location.href = "/painel";
 

@@ -19,15 +19,48 @@
         </button>
       </div>
     </div>
+
+<!-- Modal - Dentro deste ngFor é exibido apenas uma janela de modal, mas independente de vaga foi
+      selecionada, os dados que o modal apresenta são apenas do primeiro objeto -->
+      <!--
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    name="modal">
+    <div class="modal-dialog ">
+      <div class="modal-content" >
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">ID vaga: {{vaga.id}}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+  
+        <div class="modal-body">
+          <div class="list-descricao">
+  
+              <div><span>Descrição: {{vaga.descricao}}</span> </div>
+              <div><span>Requisitos obrigatórios: {{vaga.req_obrigatorios}}</span> </div>
+              <div><span>Requisitos desejáveis: {{vaga.req_desejaveis}}</span> </div>
+              <div><span>Remuneração: {{vaga.remuneracao}}</span> </div>
+              <div><span>Vaga está aberta? 1-Sim 2-Não: {{vaga.aberta}}</span> </div>
+              <div><span>Benefícios: {{vaga.beneficios}}</span> </div>
+              <div><span>Local de trabalho: {{vaga.local_trabalho}}</span> </div>
+              <div><span>Imagem: {{vaga.foto}}</span> </div>
+  
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a [routerLink]="['/update', vaga.id]" class="btn btn-warning btn-atualizar">Atualizar</a>
+          <button type="button" class="btn btn-danger" (click)="deleteVaga(vaga.id)">Excluir Vaga</button>
+        </div>
+      </div> 
+    </div>
+  </div>-->
+
+    </div>
   </div>
-
-</div>
-
 
 </section>
 
 
-<!-- Modal 
+<!-- Modal - Nesta posição, os modais de todos os objetos são abertos ao mesmo tempo -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
   name="modal">
   <div class="modal-dialog ">
@@ -39,61 +72,22 @@
 
       <div class="modal-body">
         <div class="list-descricao">
-          <ul>
-            <li>Descrição: {{vaga.descricao}}</li>
-            <li>Requisitos obrigatórios: {{vaga.req_obrigatorios}}</li>
-            <li>Requisitos desejáveis: {{vaga.req_desejaveis}}</li>
-            <li>Remuneração: {{vaga.remuneracao}}</li>
-            <li>Vaga está aberta? 1-Sim 0-Não: {{vaga.aberta}}</li>
-            <li>Benefícios: {{vaga.beneficios}}</li>
-            <li>Local de trabalho: {{vaga.local_trabalho}}</li>
-          </ul>
+
+          <div><span>Descrição: {{vaga.descricao}}</span> </div>
+          <div><span>Requisitos obrigatórios: {{vaga.req_obrigatorios}}</span> </div>
+          <div><span>Requisitos desejáveis: {{vaga.req_desejaveis}}</span> </div>
+          <div><span>Remuneração: {{vaga.remuneracao}}</span> </div>
+          <div><span>Vaga está aberta? 1-Sim 2-Não: {{vaga.aberta}}</span> </div>
+          <div><span>Benefícios: {{vaga.beneficios}}</span> </div>
+          <div><span>Local de trabalho: {{vaga.local_trabalho}}</span> </div>
+          <div><span>Imagem: {{vaga.foto}}</span> </div>
+
         </div>
       </div>
 
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-warning" (click)="atualizar(vaga.id)">Atualizar Vaga</button>
-        <button type="button" class="btn btn-danger" (click)="excluir(vaga.id)">Excluir Vaga</button>
-
-      </div>
-    </div>
-  </div>
-</div>
--->
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
-  name="modal">
-  <div class="modal-dialog ">
-    <div class="modal-content" *ngFor="let vaga of vagas">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">ID vaga: <input class="input-text" name="id" [(ngModel)]="vaga.id" value="{{vaga.id}}"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <div class="modal-body">
-        <div class="list-descricao">
-          
-            <div><span>Descrição: </span> <input class="input-text" name="descricao" [(ngModel)]="vaga.descricao" value="{{vaga.descricao}"></div>
-            <div><span>Requisitos obrigatórios: </span> <input class="input-text" name="req_obrigatorios" [(ngModel)]="vaga.req_obrigatorios" value="{{vaga.req_obrigatorios}}"></div>
-            <div><span>Requisitos desejáveis: </span> <input class="input-text" name="req_desejaveis" [(ngModel)]="vaga.req_desejaveis" value="{{vaga.req_desejaveis}}"></div>
-            <div><span>Remuneração: </span> <input class="input-text" name="remuneracao" [(ngModel)]="vaga.remuneracao" value="{{vaga.remuneracao}}"></div>
-            <div><span>Vaga está aberta?</span> 
-              <input class="form-check-input" type="radio" name="exampleRadios" id="aberta1" value="1" placeholder="" name="aberta" [(ngModel)]="vaga.aberta">Sim
-              <input class="form-check-input" type="radio" name="exampleRadios" id="aberta2" value="2" placeholder="" name="aberta" [(ngModel)]="vaga.aberta">Não </div>
-            <div><span>Benefícios: </span> <input class="input-text" name="beneficios" [(ngModel)]="vaga.beneficios" value="{{vaga.beneficios}}"></div>
-            <div><span>Local de trabalho: </span> <input class="input-text" name="local_trabalho" [(ngModel)]="vaga.local_trabalho" value="{{vaga.local_trabalho}}"></div>
-            <div><span>Imagem: </span> <input type="text" class="input-text" name="foto" [(ngModel)]="vaga.foto" value="{{vaga.foto}}"></div>
-          
-        </div>
-      </div>
-
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" (click)="updateVaga(vaga.id)">Atualizar Vaga</button>
-
-        <a [routerLink]="['/update/', vaga.id]" class="btn">Atualizar</a>
+        <a [routerLink]="['/update', vaga.id]" class="btn btn-warning btn-atualizar">Atualizar</a>
         <button type="button" class="btn btn-danger" (click)="deleteVaga(vaga.id)">Excluir Vaga</button>
 
       </div>

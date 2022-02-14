@@ -6,15 +6,14 @@
 }
 
 .form-container{
-    width: 70%;
+
     margin: 0 auto;
     padding: 2rem;
     flex-direction: column;
 }
 
-.form-check{
-    width: 90%;
-    margin: 0 auto;
+.form-floating{
+    width:15rem;
 }
 .row.grow{
     flex-grow:1;
@@ -28,4 +27,8 @@ h2{
 
 label{
     font-size: 1rem;
+}
+
+.button{
+    margin: 0 auto;
 }

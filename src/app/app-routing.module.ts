@@ -14,6 +14,7 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos.component';
 const routes: Routes = [
   { path: 'painel', component: PainelVagasComponent },
   { path: 'create', component: CreateComponent },
+  { path: 'update/:id', component: UpdateComponent },
   { path: 'update', component: UpdateComponent },
   { path: 'delete', component: DeleteComponent },
   { path: 'read', component: ReadComponent},

@@ -63,7 +63,13 @@ button.btn-close{
     right:0rem;
     margin-inline-end: 0.2rem;
     flex-direction: row-reverse;
+}
 
+.btn-atualizar{
+    width:6rem;
+    height: 2.7rem;
+    color: black;
+    font-size: 1rem;
 }
 
 .modal{
@@ -79,6 +85,10 @@ button.btn-close{
     width:20rem;
     color:blue;
 }
+.input-id{
+    width: 5rem;
+}
+
 .form-check-input{
     border: solid 1px;
     width:21.45;

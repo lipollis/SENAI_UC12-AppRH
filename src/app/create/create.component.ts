@@ -20,8 +20,7 @@ export class CreateComponent implements OnInit {
 
   createVaga(){
     this._searchVagasAPIService.cadastrarVaga(this.vaga).subscribe(
-      vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
-      err => {console.log("erro ao cadastrar")}
+      vagaMsg => {this.vaga = new VagasModel(0,"","","",0,0,"","","")}
     );
     window.location.href = "/painel";
   }
