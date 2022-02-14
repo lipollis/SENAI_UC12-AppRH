@@ -18,7 +18,7 @@ constructor(private _searchVagasAPIService: SearchVagasAPIService) { }
 ngOnInit(): void {
 }
 
-atualizar(id: number){
+updateVaga(id: number){
   this._searchVagasAPIService.atualizarVaga(id,this.vaga).subscribe(
     vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
     err => {console.log("erro ao atualizar")}
@@ -26,14 +26,4 @@ atualizar(id: number){
   window.location.href = "/painel";
 
 }
-
-excluir(id: number){
-  this._searchVagasAPIService.removerVaga(id).subscribe(
-    vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
-    err => {console.log("erro ao Excluir")}
-  );
-  window.location.href = "/painel";
-
-}
-
 }

@@ -17,7 +17,7 @@ constructor(private _searchVagasAPIService: SearchVagasAPIService) { }
 ngOnInit(): void {
 }
 
-excluir(id: number){
+deleteVaga(id: number){
   this._searchVagasAPIService.removerVaga(id).subscribe(
     vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
     err => {console.log("erro ao Excluir")}

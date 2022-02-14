@@ -12,10 +12,12 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     grid-gap: 2rem;
+    
 }
 
 .card-body{
     width: 20rem;
+    height: 10rem;
 }
 
 .card-title{

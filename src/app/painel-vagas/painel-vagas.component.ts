@@ -55,7 +55,7 @@ CONFORME A QTDE DE VAGAS ARMAZENADAS NO JSON
 PARA ISSO, TAMBÉM FOI USADO UMA NOTAÇÃO ENTRE {{}} PARA 
 BUSCAR AS INFORMAÇÕES DO JSON NO SRC*/
 
-atualizar(id: number){
+updateVaga(id: number){
   this._searchVagasAPIService.atualizarVaga(id,this.vaga).subscribe(
     vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
     err => {console.log("erro ao atualizar")}
@@ -64,7 +64,7 @@ atualizar(id: number){
 
 }
 
-excluir(id: number){
+deleteVaga(id: number){
   this._searchVagasAPIService.removerVaga(id).subscribe(
     vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
     err => {console.log("erro ao Excluir")}
