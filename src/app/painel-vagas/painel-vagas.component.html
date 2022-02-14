@@ -87,7 +87,7 @@
 
 
       <div class="modal-footer">
-        <a [routerLink]="['/update', vaga.id]" class="btn btn-warning btn-atualizar">Atualizar</a>
+        <a [routerLink]="['/update', vaga.id]" class="btn btn-warning btn-atualizar" data-bs-dismiss="modal">Atualizar</a>
         <button type="button" class="btn btn-danger" (click)="deleteVaga(vaga.id)">Excluir Vaga</button>
 
       </div>
