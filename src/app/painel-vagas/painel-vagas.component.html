@@ -4,9 +4,9 @@
 
   <div class="">
 
-    <div class="card border-warning mb-3" >
+    <div class="card text-white bg-secondary border-warning mb-3" >
       <img class="card-img-top" src="../../assets/img/Vagas/{{vaga.foto}}" alt="Card image cap">
-      <div class="card-body">
+      <div class="card-body ">
         <h5 class="card-title">ID: {{vaga.id}} - {{vaga.descricao}}</h5>
         <p class="card-text">Remuneração: {{vaga.remuneracao}}</p>
         <p class="card-text">Local de Trabalho: {{vaga.local_trabalho}}</p>
@@ -14,7 +14,7 @@
       <div class="card-footer">
         <small class="text-muted"></small>
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-warning view_data" id="{{vaga.id}}" data-bs-toggle="modal" data-bs-target="#exampleModal">
           + Info!
         </button>
       </div>
@@ -27,35 +27,72 @@
 </section>
 
 
-<!-- Modal -->
+<!-- Modal 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
   name="modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
+  <div class="modal-dialog ">
+    <div class="modal-content" *ngFor="let vaga of vagas">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">ID vaga: </h5>
+        <h5 class="modal-title" id="exampleModalLabel">ID vaga: {{vaga.id}}</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
 
       <div class="modal-body">
         <div class="list-descricao">
           <ul>
-            <li>Descrição: </li>
-            <li>Requisitos obrigatórios: </li>
-            <li>Requisitos desejáveis: </li>
-            <li>Remuneração: </li>
-            <li>Vaga está aberta? 1-Sim 0-Não:</li>
-            <li>Benefícios: </li>
-            <li>Local de trabalho: </li>
+            <li>Descrição: {{vaga.descricao}}</li>
+            <li>Requisitos obrigatórios: {{vaga.req_obrigatorios}}</li>
+            <li>Requisitos desejáveis: {{vaga.req_desejaveis}}</li>
+            <li>Remuneração: {{vaga.remuneracao}}</li>
+            <li>Vaga está aberta? 1-Sim 0-Não: {{vaga.aberta}}</li>
+            <li>Benefícios: {{vaga.beneficios}}</li>
+            <li>Local de trabalho: {{vaga.local_trabalho}}</li>
           </ul>
         </div>
       </div>
 
 
       <div class="modal-footer">
+        <button type="button" class="btn btn-warning" (click)="atualizar(vaga.id)">Atualizar Vaga</button>
+        <button type="button" class="btn btn-danger" (click)="excluir(vaga.id)">Excluir Vaga</button>
 
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+  name="modal">
+  <div class="modal-dialog ">
+    <div class="modal-content" *ngFor="let vaga of vagas">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ID vaga: <input class="input-text" name="id" [(ngModel)]="vaga.id" value="{{vaga.id}}"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="list-descricao">
+          
+            <div><span>Descrição: </span> <input class="input-text" name="descricao" [(ngModel)]="vaga.descricao" value="{{vaga.descricao}"></div>
+            <div><span>Requisitos obrigatórios: </span> <input class="input-text" name="req_obrigatorios" [(ngModel)]="vaga.req_obrigatorios" value="{{vaga.req_obrigatorios}}"></div>
+            <div><span>Requisitos desejáveis: </span> <input class="input-text" name="req_desejaveis" [(ngModel)]="vaga.req_desejaveis" value="{{vaga.req_desejaveis}}"></div>
+            <div><span>Remuneração: </span> <input class="input-text" name="remuneracao" [(ngModel)]="vaga.remuneracao" value="{{vaga.remuneracao}}"></div>
+            <div><span>Vaga está aberta?</span> 
+              <input class="form-check-input" type="radio" name="exampleRadios" id="aberta1" value="1" placeholder="" name="aberta" [(ngModel)]="vaga.aberta">Sim
+              <input class="form-check-input" type="radio" name="exampleRadios" id="aberta2" value="2" placeholder="" name="aberta" [(ngModel)]="vaga.aberta">Não </div>
+            <div><span>Benefícios: </span> <input class="input-text" name="beneficios" [(ngModel)]="vaga.beneficios" value="{{vaga.beneficios}}"></div>
+            <div><span>Local de trabalho: </span> <input class="input-text" name="local_trabalho" [(ngModel)]="vaga.local_trabalho" value="{{vaga.local_trabalho}}"></div>
+            <div><span>Imagem: </span> <input type="text" class="input-text" name="foto" [(ngModel)]="vaga.foto" value="{{vaga.foto}}"></div>
+          
+        </div>
+      </div>
+
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" (click)="atualizar(vaga.id)">Atualizar Vaga</button>
+        <button type="button" class="btn btn-danger" (click)="excluir(vaga.id)">Excluir Vaga</button>
 
       </div>
     </div>

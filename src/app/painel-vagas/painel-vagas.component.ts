@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { VagasModel } from '../models/Vagas.model';
 import { SearchVagasAPIService } from '../search-vagas-api.service';
 
@@ -9,10 +11,14 @@ import { SearchVagasAPIService } from '../search-vagas-api.service';
 })
 export class PainelVagasComponent implements OnInit {
 
-    // ATRIBUTO PARA O ARRAY - INICIA VAZIO
-    public vagas: VagasModel[] = [];
+  // ATRIBUTO PARA O ARRAY - INICIA VAZIO
+  public vagas: VagasModel[] = [];
+  public vaga: VagasModel = new VagasModel(0,"","","",0,0,"","","");
     
-  constructor(private _searchVagasAPIService: SearchVagasAPIService) { }
+  constructor(private _searchVagasAPIService: SearchVagasAPIService,
+    private route: ActivatedRoute,
+    private router: Router) { }
+
 
   ngOnInit(): void {
     this.listarVagas();
@@ -48,4 +54,23 @@ CONFORME A QTDE DE VAGAS ARMAZENADAS NO JSON
 
 PARA ISSO, TAMBÉM FOI USADO UMA NOTAÇÃO ENTRE {{}} PARA 
 BUSCAR AS INFORMAÇÕES DO JSON NO SRC*/
+
+atualizar(id: number){
+  this._searchVagasAPIService.atualizarVaga(id,this.vaga).subscribe(
+    vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
+    err => {console.log("erro ao atualizar")}
+  );
+  window.location.href = "/painel";
+
+}
+
+excluir(id: number){
+  this._searchVagasAPIService.removerVaga(id).subscribe(
+    vaga => {this.vaga = new VagasModel(0,"","","",0,0,"","","")},
+    err => {console.log("erro ao Excluir")}
+  );
+  window.location.href = "/painel";
+
+}
+
 }

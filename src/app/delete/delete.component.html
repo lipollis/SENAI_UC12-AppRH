@@ -1,0 +1,19 @@
+<div class="form-container">
+    <h2>Excluir vaga</h2>
+    <div class="row grow">
+        <form class="row g-3 needs-validation" novalidate>
+
+            <div class="form-floating">
+                <input type="text" class="form-control text-input" id="id" placeholder="ID Vaga" name="id" [(ngModel)]="vaga.id">
+                <label for="id">ID Vaga</label>
+            </div>
+        
+        
+        
+            <div class="col-12 button">
+                <button type="button" class="btn btn-danger" (click)="excluir(vaga.id)">Excluir Vaga</button>
+            </div>
+        </form>
+    </div>
+    
+</div>

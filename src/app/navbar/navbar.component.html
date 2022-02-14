@@ -1,42 +1,22 @@
 <div class="navbar-container">
 
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <h5 class="text-white h4">O lugar certo para sua recolocação profissional</h5>
-  
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" routerLink="/home" routerLinkActive="selected">Home</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" routerLink="/painel" routerLinkActive="selected">Painel de
-                  Vagas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" routerLink="/cadastrar"
-                  routerLinkActive="selected">Cadastrar Vagas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" routerLink="/editar" routerLinkActive="selected">Editar
-                  Vagas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink="/sobre" routerLinkActive="selected">Sobre nós</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">APP RH</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" routerLink="/painel" routerLinkActive="selected">Painel de
+          Vagas </a>
+        <a class="nav-item nav-link" routerLink="/create" routerLinkActive="selected">Criar vaga</a>
+        <a class="nav-item nav-link" routerLink="/update" routerLinkActive="selected">Atualizar vaga</a>
+        <a class="nav-item nav-link" routerLink="/delete" routerLinkActive="selected">Excluir vaga</a>
+        <a class="nav-item nav-link disabled" routerLink="/sobre" routerLinkActive="selected">Sobre nós</a>
+      </div>
     </div>
-  </div>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
+
+    <div class="container-fluid ">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
         aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,9 +24,10 @@
       <a class="navbar-brand" href="#">
         <img src="../assets/img/Config/recruitment.svg" alt="" width="50" height="50"
           class="d-inline-block align-text-top navbar-brand">
-        App RH
+        
       </a>
     </div>
   </nav>
+
 
 </div>

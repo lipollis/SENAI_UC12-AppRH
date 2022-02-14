@@ -1,17 +1,6 @@
 {
   "vagas": [
     {
-      "id": 1,
-      "descricao": "Supervisor de Sistemas",
-      "req_obrigatorios": "5 anos de experiência e graduação na área",
-      "req_desejaveis": "Especialização",
-      "remuneracao": "5.123,45",
-      "aberta": 1,
-      "beneficios": "VT + VR",
-      "local_trabalho": "Jundiaí/SP",
-      "foto": "vaga-emprego-1.jpg"
-    },
-    {
       "id": 2,
       "descricao": "Gerente de Sistemas",
       "req_obrigatorios": "15 anos de experiência e especialização",
@@ -35,25 +24,47 @@
     },
     {
       "id": 5,
-      "descricao": "Web Designer",
-      "req_obrigatorios": "HTML e CSS",
-      "req_desejaveis": "Frameworks CSS",
-      "remuneracao": 2534,
+      "descricao": "Supervisor de Sistemas",
+      "req_obrigatorios": "5 anos de experiência e graduação na área",
+      "req_desejaveis": "Especialização",
+      "remuneracao": 5345,
       "aberta": "1",
-      "beneficios": "VT ",
-      "local_trabalho": "Osasco/SP",
+      "beneficios": " VT + VR",
+      "local_trabalho": "Jundiaí-SP",
       "foto": "vaga-emprego-1.jpg"
     },
     {
       "id": 6,
-      "descricao": "Supervisor de Sistemas",
-      "req_obrigatorios": "5 anos de experiência e graduação na área",
-      "req_desejaveis": "Especialização",
-      "remuneracao": 2342,
-      "aberta": "vaga.aberta",
-      "beneficios": "VT + VR",
-      "local_trabalho": " Jundiaí/SP",
+      "descricao": "Web Designer",
+      "req_obrigatorios": "HTML e CSS",
+      "req_desejaveis": "Frameworks CSS",
+      "remuneracao": 3523,
+      "aberta": "1",
+      "beneficios": "VT",
+      "local_trabalho": "Osasco/SP",
       "foto": "vaga-emprego-1.jpg"
+    },
+    {
+      "id": 7,
+      "descricao": "",
+      "req_obrigatorios": "",
+      "req_desejaveis": "",
+      "remuneracao": 0,
+      "aberta": 0,
+      "beneficios": "",
+      "local_trabalho": "",
+      "foto": ""
+    },
+    {
+      "id": 8,
+      "descricao": "",
+      "req_obrigatorios": "",
+      "req_desejaveis": "",
+      "remuneracao": 0,
+      "aberta": 0,
+      "beneficios": "",
+      "local_trabalho": "",
+      "foto": ""
     }
   ]
 }

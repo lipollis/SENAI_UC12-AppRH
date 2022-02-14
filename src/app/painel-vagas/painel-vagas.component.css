@@ -64,13 +64,27 @@ button.btn-close{
 
 }
 
-.list-descricao{
-    width: 30rem;
+.modal{
+    margin: 0 auto;
 }
 
-.list-descricao > ul > li{
-    font-size: 0.8rem;
-    list-style-type: none;
+.list-descricao{
+    width: 20rem;
+}
+.input-text{
+    border: none;
+    font-size: 1rem;
+    width:20rem;
+    color:blue;
+}
+.form-check-input{
+    border: solid 1px;
+    width:21.45;
+    color:blue;
+}
+
+span{
+    font-size: 1rem;
 }
 
 /*======================================

@@ -1,0 +1,19 @@
+
+div.navbar-brand{
+    left: 1rem;
+}
+
+
+div.navbar-nav{
+    margin: 0 auto;
+}
+
+.container-fluid{
+    float: right;
+    width: 10%;
+    margin-right: 0;
+}
+
+a.navbar-brand{
+    float: right;
+}

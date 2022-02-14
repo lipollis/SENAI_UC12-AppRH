@@ -17,6 +17,12 @@ export class SearchVagasAPIService {
     return this._httpClient.get<VagasModel[]>(this.url);
   }
 
+  // BUSCAR POR ID
+  getById(id: any): Observable<VagasModel[]> {
+    const urlById = `${this.url}/${id}`
+    return this._httpClient.get<VagasModel[]>(urlById);
+  }
+
   // MÉTODO PARA CADASTRAR VAGA
   cadastrarVaga(vaga: VagasModel):Observable<VagasModel[]>{
     return this._httpClient.post<VagasModel[]>(this.url,vaga);
