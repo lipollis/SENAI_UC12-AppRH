@@ -1,0 +1,48 @@
+{
+  "vagas": [
+    {
+      "id": 3,
+      "descricao": "Web Designer",
+      "req_obrigatorios": "HTML e CSS",
+      "req_desejaveis": "Frameworks CSS",
+      "remuneracao": "3.456,78",
+      "aberta": 1,
+      "beneficios": "VT",
+      "local_trabalho": "Osasco/SP",
+      "foto": "vaga-emprego-3.jpg"
+    },
+    {
+      "id": 5,
+      "descricao": "Supervisor de Sistemas",
+      "req_obrigatorios": "5 anos de experiência e graduação na área",
+      "req_desejaveis": "Especialização",
+      "remuneracao": 5345,
+      "aberta": "1",
+      "beneficios": " VT + VR",
+      "local_trabalho": "Jundiaí-SP",
+      "foto": "vaga-emprego-1.jpg"
+    },
+    {
+      "descricao": "Web Designer",
+      "req_obrigatorios": "HTML e CSS",
+      "req_desejaveis": "Frameworks CSS",
+      "remuneracao": 3523,
+      "aberta": "1",
+      "beneficios": "VT",
+      "local_trabalho": "Osasco/SP",
+      "foto": "vaga-emprego-1.jpg",
+      "id": 6
+    },
+    {
+      "descricao": "Supervisor de Sistemas",
+      "req_obrigatorios": "5 anos de experiência e graduação na área",
+      "req_desejaveis": "Especialização",
+      "remuneracao": 5783,
+      "aberta": "1",
+      "beneficios": "VT",
+      "local_trabalho": "Osasco/SP",
+      "foto": "vaga-emprego-1.jpg",
+      "id": 8
+    }
+  ]
+}

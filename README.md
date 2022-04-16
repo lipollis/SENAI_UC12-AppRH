@@ -33,7 +33,9 @@
 <br>
 
 <br><br>
-
+<div align="center">
+<img src="./src/assets/img/Config/AppRH card screen.png"></img>
+</div>
 
 <br>
 <h2><strong> :white_medium_square: Instalação  :white_medium_square: Install</strong></h2>
